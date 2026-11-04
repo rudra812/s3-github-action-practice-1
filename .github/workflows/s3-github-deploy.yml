@@ -1,0 +1,9 @@
+name: s3-github-deploy
+on: push
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v4
